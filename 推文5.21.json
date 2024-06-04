@@ -1,0 +1,3176 @@
+{
+  "last_node_id": 237,
+  "last_link_id": 310,
+  "nodes": [
+    {
+      "id": 12,
+      "type": "MakeJob",
+      "pos": [
+        261,
+        587
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sequence",
+          "type": "SEQUENCE",
+          "link": 3,
+          "label": "sequence"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "job",
+          "type": "JOB",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "label": "job",
+          "slot_index": 0
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "count",
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MakeJob",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "sel"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 13,
+      "type": "JobIterator",
+      "pos": [
+        750,
+        614
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "job",
+          "type": "JOB",
+          "link": 4,
+          "label": "job"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attributes",
+          "type": "ATTRIBUTES",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "label": "attributes",
+          "slot_index": 0
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "count",
+          "slot_index": 1
+        },
+        {
+          "name": "step",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "step",
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JobIterator",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        0
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 50,
+      "type": "Display Int (rgthree)",
+      "pos": [
+        -145,
+        438
+      ],
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "INT",
+          "link": 51,
+          "widget": {
+            "name": "input"
+          },
+          "label": "输入",
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Display Int (rgthree)",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        0,
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 11,
+      "type": "Range",
+      "pos": [
+        -147,
+        658
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "stop",
+          "type": "INT",
+          "link": 52,
+          "widget": {
+            "name": "stop"
+          },
+          "slot_index": 0,
+          "label": "stop"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sequence",
+          "type": "SEQUENCE",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "label": "sequence",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Range",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        1,
+        4,
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 17,
+      "type": "Display Int (rgthree)",
+      "pos": [
+        240,
+        288
+      ],
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "INT",
+          "link": 47,
+          "widget": {
+            "name": "input"
+          },
+          "label": "输入",
+          "dir": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Display Int (rgthree)",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        0,
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 49,
+      "type": "txt_len",
+      "pos": [
+        -722,
+        461
+      ],
+      "size": {
+        "0": 376.65618896484375,
+        "1": 63.686771392822266
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txt",
+          "type": "STRING",
+          "link": 50,
+          "widget": {
+            "name": "txt"
+          },
+          "label": "txt"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "txt_length",
+          "type": "INT",
+          "links": [
+            51,
+            52
+          ],
+          "shape": 3,
+          "label": "txt_length"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "txt_len",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 184,
+      "type": "MakeJob",
+      "pos": [
+        -160.9147715794236,
+        -1851.6981178307014
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "sequence",
+          "type": "SEQUENCE",
+          "link": 212,
+          "label": "sequence"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "job",
+          "type": "JOB",
+          "links": [
+            213
+          ],
+          "shape": 3,
+          "label": "job",
+          "slot_index": 0
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "count",
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MakeJob",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "sel"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 14,
+      "type": "GetAttributeInt",
+      "pos": [
+        606,
+        450
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "attributes",
+          "type": "ATTRIBUTES",
+          "link": 5,
+          "label": "attributes"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "links": [
+            45
+          ],
+          "shape": 3,
+          "label": "value",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetAttributeInt",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "sel"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 186,
+      "type": "GetAttributeInt",
+      "pos": [
+        201,
+        -2001
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "attributes",
+          "type": "ATTRIBUTES",
+          "link": 214,
+          "label": "attributes"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "links": [
+            217
+          ],
+          "shape": 3,
+          "label": "value",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetAttributeInt",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "sel"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 183,
+      "type": "Range",
+      "pos": [
+        -756,
+        -1852
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "stop",
+          "type": "INT",
+          "link": 211,
+          "widget": {
+            "name": "stop"
+          },
+          "slot_index": 0,
+          "label": "stop"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sequence",
+          "type": "SEQUENCE",
+          "links": [
+            212
+          ],
+          "shape": 3,
+          "label": "sequence",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Range",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        1,
+        4,
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 185,
+      "type": "JobIterator",
+      "pos": [
+        353,
+        -1796
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "job",
+          "type": "JOB",
+          "link": 213,
+          "label": "job"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attributes",
+          "type": "ATTRIBUTES",
+          "links": [
+            214
+          ],
+          "shape": 3,
+          "label": "attributes",
+          "slot_index": 0
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "count",
+          "slot_index": 1
+        },
+        {
+          "name": "step",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "step",
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JobIterator",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        0
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 187,
+      "type": "txt_len",
+      "pos": [
+        -1457,
+        -1922
+      ],
+      "size": {
+        "0": 376.65618896484375,
+        "1": 63.686771392822266
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "txt",
+          "type": "STRING",
+          "link": 216,
+          "widget": {
+            "name": "txt"
+          },
+          "label": "txt"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "txt_length",
+          "type": "INT",
+          "links": [
+            211,
+            241
+          ],
+          "shape": 3,
+          "label": "txt_length",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "txt_len",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 181,
+      "type": "Example",
+      "pos": [
+        -822,
+        -1621
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "Text",
+          "type": "STRING",
+          "link": 208,
+          "widget": {
+            "name": "Text"
+          },
+          "label": "Text"
+        },
+        {
+          "name": "select_prompt",
+          "type": "INT",
+          "link": 217,
+          "widget": {
+            "name": "select_prompt"
+          },
+          "slot_index": 1,
+          "label": "select_prompt"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            266
+          ],
+          "shape": 3,
+          "label": "STRING",
+          "slot_index": 0
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [],
+          "shape": 3,
+          "label": "INT",
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Example",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "",
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 214,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -348,
+        -1604
+      ],
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 37,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 266,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "",
+        "与尔同销万古愁。"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 211,
+      "type": "fenkuai",
+      "pos": [
+        -1432,
+        -1711
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "Text",
+          "type": "STRING",
+          "link": 259,
+          "widget": {
+            "name": "Text"
+          },
+          "slot_index": 0,
+          "label": "Text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            260
+          ],
+          "shape": 6,
+          "label": "STRING",
+          "slot_index": 0
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "INT"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "fenkuai",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 215,
+      "type": "Reroute",
+      "pos": [
+        -594.8101512975998,
+        -2908.861361036927
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 267,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            268,
+            269
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false,
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 216,
+      "type": "Display Int (rgthree)",
+      "pos": [
+        2207,
+        -2451
+      ],
+      "size": {
+        "0": 315,
+        "1": 76.00005340576172
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "INT",
+          "link": 271,
+          "widget": {
+            "name": "input"
+          },
+          "label": "输入",
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Display Int (rgthree)",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        0,
+        "28"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 198,
+      "type": "MathExpression|pysssss",
+      "pos": [
+        -987,
+        -2329
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": 241,
+          "label": "a"
+        },
+        {
+          "name": "b",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null,
+          "label": "b"
+        },
+        {
+          "name": "c",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null,
+          "label": "c"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            273,
+            274
+          ],
+          "shape": 3,
+          "label": "整数",
+          "slot_index": 0
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3,
+          "label": "浮点"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MathExpression|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "a-1"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 213,
+      "type": "StringFunction|pysssss",
+      "pos": [
+        188,
+        -3142
+      ],
+      "size": {
+        "0": 400,
+        "1": 274.0000305175781
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            264,
+            265
+          ],
+          "shape": 3,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFunction|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "append",
+        "yes",
+        "将进酒",
+        "",
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 188,
+      "type": "Display Int (rgthree)",
+      "pos": [
+        1636,
+        -2648
+      ],
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "INT",
+          "link": 274,
+          "widget": {
+            "name": "input"
+          },
+          "label": "输入",
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Display Int (rgthree)",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        0,
+        "13"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 212,
+      "type": "fen_ai",
+      "pos": [
+        1626,
+        -2433
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "Text",
+          "type": "STRING",
+          "link": 262,
+          "widget": {
+            "name": "Text"
+          },
+          "label": "Text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            263,
+            271
+          ],
+          "shape": 3,
+          "label": "INT",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "fen_ai",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 182,
+      "type": "cstxt",
+      "pos": [
+        -1883,
+        -1770
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "TXT",
+          "type": "STRING",
+          "links": [
+            208,
+            216,
+            259,
+            267
+          ],
+          "shape": 3,
+          "label": "TXT",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "cstxt",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "新建 文本文档.txt"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 205,
+      "type": "novel_draft_2",
+      "pos": [
+        2302,
+        -3021
+      ],
+      "size": {
+        "0": 315,
+        "1": 202
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "voice_path",
+          "type": "STRING",
+          "link": 249,
+          "widget": {
+            "name": "voice_path"
+          },
+          "label": "voice_path"
+        },
+        {
+          "name": "text_line",
+          "type": "STRING",
+          "link": 269,
+          "widget": {
+            "name": "text_line"
+          },
+          "label": "text_line",
+          "slot_index": 1
+        },
+        {
+          "name": "len",
+          "type": "INT",
+          "link": 273,
+          "widget": {
+            "name": "len"
+          },
+          "slot_index": 2,
+          "label": "len"
+        },
+        {
+          "name": "zlen",
+          "type": "INT",
+          "link": 263,
+          "widget": {
+            "name": "zlen"
+          },
+          "slot_index": 3,
+          "label": "zlen"
+        },
+        {
+          "name": "novel_name",
+          "type": "STRING",
+          "link": 265,
+          "widget": {
+            "name": "novel_name"
+          },
+          "slot_index": 4,
+          "label": "novel_name"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "草稿名字",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "草稿名字"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "novel_draft_2",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "我是ggg",
+        "xx.txt",
+        "F:\\ComfyUI\\output\u0007udio",
+        "F:\\ComfyUI\\output\\tuiwen",
+        "D:/jianying-caogao/JianyingPro Drafts",
+        7,
+        12
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 197,
+      "type": "StringFunction|pysssss",
+      "pos": [
+        1763,
+        -3068
+      ],
+      "size": {
+        "0": 400,
+        "1": 274
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            244,
+            249
+          ],
+          "shape": 3,
+          "label": "字符串",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFunction|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "append",
+        "yes",
+        "F:\\ComfyUI\\output\\name",
+        "",
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 224,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        2740,
+        550
+      ],
+      "size": {
+        "0": 315,
+        "1": 495
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 278,
+          "label": "模型"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 279,
+          "label": "正面条件"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 280,
+          "slot_index": 2,
+          "label": "负面条件"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 281,
+          "slot_index": 3,
+          "label": "Latent"
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 282,
+          "widget": {
+            "name": "noise_seed"
+          },
+          "slot_index": 4,
+          "label": "随机种"
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 283,
+          "widget": {
+            "name": "steps"
+          },
+          "slot_index": 5,
+          "label": "步数"
+        },
+        {
+          "name": "sampler_name",
+          "type": "COMBO",
+          "link": 284,
+          "widget": {
+            "name": "sampler_name"
+          },
+          "slot_index": 6,
+          "label": "采样器"
+        },
+        {
+          "name": "scheduler",
+          "type": "COMBO",
+          "link": 285,
+          "widget": {
+            "name": "scheduler"
+          },
+          "slot_index": 7,
+          "label": "调度器"
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 286,
+          "widget": {
+            "name": "cfg"
+          },
+          "slot_index": 8,
+          "label": "CFG"
+        },
+        {
+          "name": "end_at_step",
+          "type": "INT",
+          "link": 287,
+          "widget": {
+            "name": "end_at_step"
+          },
+          "slot_index": 9,
+          "label": "结束降噪步数"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            291
+          ],
+          "shape": 3,
+          "slot_index": 0,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "enable",
+        702642643840378,
+        "randomize",
+        35,
+        8,
+        "euler_ancestral",
+        "normal",
+        0,
+        20,
+        "enable"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 225,
+      "type": "PrimitiveNode",
+      "pos": [
+        2590,
+        190
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            283,
+            293,
+            298
+          ],
+          "widget": {
+            "name": "steps"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false,
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        35,
+        "fixed"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 226,
+      "type": "PrimitiveNode",
+      "pos": [
+        2170,
+        1320
+      ],
+      "size": {
+        "0": 210,
+        "1": 106
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "COMBO",
+          "type": "COMBO",
+          "links": [
+            284,
+            294
+          ],
+          "widget": {
+            "name": "sampler_name"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false,
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "euler_ancestral",
+        "fixed",
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 227,
+      "type": "PrimitiveNode",
+      "pos": [
+        2300,
+        730
+      ],
+      "size": {
+        "0": 210,
+        "1": 106
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "COMBO",
+          "type": "COMBO",
+          "links": [
+            285,
+            295
+          ],
+          "widget": {
+            "name": "scheduler"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false,
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "normal",
+        "fixed",
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 228,
+      "type": "PrimitiveNode",
+      "pos": [
+        2170,
+        1150
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            286,
+            296
+          ],
+          "widget": {
+            "name": "cfg"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false,
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        8,
+        "fixed"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 230,
+      "type": "Integer",
+      "pos": [
+        2100,
+        990
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            287,
+            297
+          ],
+          "shape": 3,
+          "label": "整数",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Integer",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        20
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 209,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2659,
+        -3424
+      ],
+      "size": {
+        "0": 357.09185791015625,
+        "1": 6626
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 260,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            262
+          ],
+          "shape": 6,
+          "label": "字符串",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "",
+        "君不见黄河之水天上来",
+        "奔流到海不复回",
+        "君不见高堂明镜悲白发",
+        "朝如青丝暮成雪",
+        "人生得意须尽欢",
+        "莫使金樽空对月",
+        "天生我材必有用",
+        "千金散尽还复来",
+        "烹羊宰牛且为乐",
+        "会须一饮三百杯",
+        "岑夫子",
+        "丹丘生",
+        "将进酒",
+        "杯莫停",
+        "与君歌一曲",
+        "请君为我倾耳听",
+        "钟鼓馔玉不足贵",
+        "但愿长醉不复醒",
+        "古来圣贤皆寂寞",
+        "惟有饮者留其名",
+        "陈王昔时宴平乐",
+        "斗酒十千恣欢谑",
+        "主人何为言少钱",
+        "径须沽取对君酌",
+        "五花马",
+        "千金裘",
+        "呼儿将出换美酒",
+        "与尔同销万古愁"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 201,
+      "type": "Text2AutioEdgeTts",
+      "pos": [
+        988,
+        -2888
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "texts",
+          "type": "STRING",
+          "link": 268,
+          "widget": {
+            "name": "texts"
+          },
+          "label": "texts",
+          "slot_index": 0
+        },
+        {
+          "name": "audio_path",
+          "type": "STRING",
+          "link": 244,
+          "widget": {
+            "name": "audio_path"
+          },
+          "slot_index": 1,
+          "label": "audio_path"
+        },
+        {
+          "name": "novel_name",
+          "type": "STRING",
+          "link": 264,
+          "widget": {
+            "name": "novel_name"
+          },
+          "slot_index": 2,
+          "label": "novel_name"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "音频路径",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "音频路径"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text2AutioEdgeTts",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "zh-CN-XiaoyiNeural",
+        "",
+        "我是ggg",
+        "F:\\ComfyUI\\output\u0007udio"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 223,
+      "type": "PrimitiveNode",
+      "pos": [
+        2660,
+        -10
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            282,
+            292
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "noise_seed"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false,
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        702642643840378,
+        "fixed"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 222,
+      "type": "EmptyLatentImage",
+      "pos": [
+        2100,
+        80
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            281
+          ],
+          "shape": 3,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        1280,
+        720,
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 229,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        3410,
+        240
+      ],
+      "size": {
+        "0": 315,
+        "1": 495
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 288,
+          "slot_index": 0,
+          "label": "模型"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 289,
+          "slot_index": 1,
+          "label": "正面条件"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 302,
+          "slot_index": 2,
+          "label": "负面条件"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 291,
+          "slot_index": 3,
+          "label": "Latent"
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 292,
+          "widget": {
+            "name": "noise_seed"
+          },
+          "slot_index": 4,
+          "label": "随机种"
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 293,
+          "widget": {
+            "name": "steps"
+          },
+          "slot_index": 5,
+          "label": "步数"
+        },
+        {
+          "name": "sampler_name",
+          "type": "COMBO",
+          "link": 294,
+          "widget": {
+            "name": "sampler_name"
+          },
+          "slot_index": 6,
+          "label": "采样器"
+        },
+        {
+          "name": "scheduler",
+          "type": "COMBO",
+          "link": 295,
+          "widget": {
+            "name": "scheduler"
+          },
+          "slot_index": 7,
+          "label": "调度器"
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 296,
+          "widget": {
+            "name": "cfg"
+          },
+          "slot_index": 8,
+          "label": "CFG"
+        },
+        {
+          "name": "start_at_step",
+          "type": "INT",
+          "link": 297,
+          "widget": {
+            "name": "start_at_step"
+          },
+          "slot_index": 9,
+          "label": "开始降噪步数"
+        },
+        {
+          "name": "end_at_step",
+          "type": "INT",
+          "link": 298,
+          "widget": {
+            "name": "end_at_step"
+          },
+          "slot_index": 10,
+          "label": "结束降噪步数"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            304
+          ],
+          "shape": 3,
+          "slot_index": 0,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "disable",
+        702642643840378,
+        "randomize",
+        35,
+        8,
+        "euler_ancestral",
+        "normal",
+        20,
+        35,
+        "disable"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 61,
+      "type": "CR Image Output",
+      "pos": [
+        4415,
+        164
+      ],
+      "size": {
+        "0": 1112.4796142578125,
+        "1": 1350.0330810546875
+      },
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 306,
+          "label": "图像"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "trigger",
+          "type": "BOOLEAN",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Image Output",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "Save",
+        "tuiwen/CR",
+        "yyyyMMdd",
+        "png",
+        false
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 234,
+      "type": "VAEDecode",
+      "pos": [
+        3914.778817226648,
+        340.06370042055335
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 304,
+          "label": "Latent"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 305,
+          "label": "VAE",
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            306
+          ],
+          "shape": 3,
+          "label": "图像",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 232,
+      "type": "StringFunction|pysssss",
+      "pos": [
+        1320,
+        -10
+      ],
+      "size": {
+        "0": 422.8101806640625,
+        "1": 326.0035705566406
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 299,
+          "widget": {
+            "name": "text_a"
+          },
+          "label": "文本_A",
+          "slot_index": 0
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 301,
+          "widget": {
+            "name": "text_b"
+          },
+          "label": "文本_B"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            277
+          ],
+          "shape": 3,
+          "label": "字符串",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFunction|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "append",
+        "yes",
+        "",
+        "",
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 233,
+      "type": "Simple String",
+      "pos": [
+        910,
+        -62
+      ],
+      "size": {
+        "0": 308.2374267578125,
+        "1": 86.68083190917969
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            299
+          ],
+          "shape": 3,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "8k, best quality, masterpiece, ultra highres:1.2) Photo of Pretty Japanese woman in the (style of paul rubens and rebecca guay:1.1) (melancholy winter snow:1.4)"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 45,
+      "type": "Example",
+      "pos": [
+        -907,
+        149
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Text",
+          "type": "STRING",
+          "link": 172,
+          "widget": {
+            "name": "Text"
+          },
+          "label": "Text"
+        },
+        {
+          "name": "select_prompt",
+          "type": "INT",
+          "link": 45,
+          "widget": {
+            "name": "select_prompt"
+          },
+          "slot_index": 1,
+          "label": "select_prompt"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            46,
+            301
+          ],
+          "shape": 3,
+          "label": "STRING",
+          "slot_index": 0
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            47
+          ],
+          "shape": 3,
+          "label": "INT",
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Example",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "",
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 220,
+      "type": "PromptControlSimple",
+      "pos": [
+        1910,
+        400
+      ],
+      "size": [
+        360,
+        298
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 275,
+          "slot_index": 0,
+          "label": "model"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 276,
+          "slot_index": 1,
+          "label": "clip"
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 277,
+          "widget": {
+            "name": "positive"
+          },
+          "slot_index": 2,
+          "label": "positive"
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 308,
+          "widget": {
+            "name": "negative"
+          },
+          "slot_index": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            278
+          ],
+          "shape": 3,
+          "slot_index": 0,
+          "label": "model"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            279
+          ],
+          "shape": 3,
+          "slot_index": 1,
+          "label": "positive"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            280
+          ],
+          "shape": 3,
+          "slot_index": 2,
+          "label": "negative"
+        },
+        {
+          "name": "model_filtered",
+          "type": "MODEL",
+          "links": [
+            288
+          ],
+          "shape": 3,
+          "slot_index": 3,
+          "label": "model_filtered"
+        },
+        {
+          "name": "pos_filtered",
+          "type": "CONDITIONING",
+          "links": [
+            289
+          ],
+          "shape": 3,
+          "slot_index": 4,
+          "label": "pos_filtered"
+        },
+        {
+          "name": "neg_filtered",
+          "type": "CONDITIONING",
+          "links": [
+            302
+          ],
+          "shape": 3,
+          "slot_index": 5,
+          "label": "neg_filtered"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptControlSimple",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "",
+        "sketch, ugly, bad,wrinkles Deformed eyes, ((disfigured)), ((bad art)), ((deformed)), ((extra limbs)), (((duplicated))), ((morbid)), ((mutilated)), out of frame, extra fingers, mutated hands, poorly drawn eyes, ((poorly drawn hands)), ((poorly drawn face)), (((extra legs))), (fused fingers), (too many fingers), (((long neck))), tiling, poorly drawn, mutated, cross-eye, canvas frame, frame, cartoon, 3d, weird colors, blurry, ((old)), ((ugly)), ((child)),, NG_DeepNegative_V1_75T, (extra hand:1.4),",
+        "NO",
+        0,
+        1
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 236,
+      "type": "Simple String",
+      "pos": [
+        1426,
+        502
+      ],
+      "size": [
+        244.82966097959616,
+        114.1141610429695
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            308
+          ],
+          "shape": 3,
+          "label": "字符串",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "multiple breasts,(mutated hands and fingers:1.5 ),(long body :1.3),(mutation, poorly drawn :1.2),black-white,bad anatomy,liquid body,liquid，tongue,disfigured,malformed,mutated,anatomical nonsense,text font ui,error,malformed hands,long neck,blurred,lowers,lowres,bad anatomy,bad proportions,bad shadow,uncoordinated body,unnatural body,fused breasts,bad breasts,huge breasts,poorly drawn breasts,extra breasts,liquid breasts,heavy breasts,missing breasts,huge haunch,huge thighs,huge calf,bad hands,fused hand,missing hand,disappearing arms,disappearing thigh,disappearing calf,disappearing legs,fused ears,bad ears,poorly drawn ears,extra ears,liquid ears,heavy ears,missing ears,fused animal ears,bad animal ears,poorly drawn animal ears,extra animal ears,liquid animal ears,heavy animal ears,missing animal ears,text,ui,error,missing fingers,missing limb,fused fingers,one hand with more than 5 fingers,one hand with less than 5 fingers,one hand with more than 5 digit,one hand with less than 5 digit,extra digit,fewer digits,fused digit,missing digit,bad digit,liquid digit,colorful tongue,black tongue,cropped,watermark,username,blurry,JPEG artifacts,signature,3D,3D game,3D game scene,3D character,malformed feet,extra feet,bad feet,poorly drawn feet,fused feet,missing feet,extra shoes,bad shoes,fused shoes,more than two shoes,poorly drawn shoes,bad gloves,poorly drawn gloves,fused gloves,bad cum,poorly drawn cum,fused cum,bad hairs,poorly drawn hairs,fused hairs,big muscles,ugly,bad face,fused face,poorly drawn face,cloned face,big face,long face,bad eyes,fused eyes poorly drawn eyes,extra eyes,malformed limbs,more than 2 nipples,missing nipples,different nipples,fused nipples,bad nipples,poorly drawn nipples,black nipples,colorful nipples,gross proportions. short arm,(((missing arms))),missing thighs,missing calf,missing legs,mutation,duplicate,morbid,mutilated,poorly drawn hands,more than 1 left hand,more than 1 right hand,deformed,(blurry),disfigured,missing legs,extra arms,extra thighs,more than 2 thighs,extra calf,fused calf,extra legs,bad knee,extra knee,more than 2 legs,bad tails,bad mouth,fused mouth,poorly drawn mouth,bad tongue,tongue within mouth,too long tongue,black tongue,big mouth,cracked mouth,bad mouth,dirty face,dirty teeth,dirty pantie,fused pantie,poorly drawn pantie,fused cloth,poorly drawn cloth,bad pantie,yellow teeth,thick lips,bad cameltoe,colorful cameltoe,bad asshole,poorly drawn asshole,fused asshole,missing asshole,bad anus,bad pussy,bad crotch,bad crotch seam,fused anus,fused pussy,fused anus,fused crotch,poorly drawn crotch,fused seam,poorly drawn anus,poorly drawn pussy,poorly drawn crotch,poorly drawn crotch seam,bad thigh gap,missing thigh gap,fused thigh gap,liquid thigh gap,poorly drawn thigh gap,poorly drawn anus,bad collarbone,fused collarbone,missing collarbone,liquid collarbone,strong girl,obesity,worst quality,low quality,normal quality,liquid tentacles,bad tentacles,poorly drawn tentacles,split tentacles,fused tentacles,missing clit,bad clit,fused clit,colorful clit,black clit,liquid clit,QR code,bar code,censored,safety panties,safety knickers,beard,furry,pony,pubic hair,mosaic,excrement,faeces,shit,futa,testis,"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 48,
+      "type": "cstxt",
+      "pos": [
+        -1610,
+        313
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "TXT",
+          "type": "STRING",
+          "links": [
+            50,
+            172
+          ],
+          "shape": 3,
+          "label": "TXT",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "cstxt",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "正面提示词.txt"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 15,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -161,
+        46
+      ],
+      "size": {
+        "0": 327.32598876953125,
+        "1": 163.98593139648438
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 46,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "shape": 6,
+          "label": "字符串",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "",
+        "In the final scene, Li Bai and his companions sit beneath a canopy of fragrant blossoms, their faces illuminated by the soft glow of lanterns. As the night deepens, they raise their cups in a final toast, their voices blending in a chorus of laughter and song. Li Bai's heart is light, his spirit buoyed by the shared moments of joy and camaraderie, a poignant reminder of the beauty and fleeting nature of life's pleasures."
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 235,
+      "type": "VAELoader",
+      "pos": [
+        3829,
+        597
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            305
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "sdxl_vae.safetensors"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 221,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        1310,
+        860
+      ],
+      "size": {
+        "0": 401.9272155761719,
+        "1": 128.716064453125
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            275
+          ],
+          "shape": 3,
+          "label": "模型"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            276
+          ],
+          "shape": 3,
+          "slot_index": 1,
+          "label": "CLIP"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "shape": 3,
+          "label": "VAE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple",
+        "ttNbgOverride": {
+          "color": "#222",
+          "bgcolor": "#000",
+          "groupcolor": "#444"
+        }
+      },
+      "widgets_values": [
+        "xl\\bluePencilXL_v050.safetensors"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    }
+  ],
+  "links": [
+    [
+      3,
+      11,
+      0,
+      12,
+      0,
+      "SEQUENCE"
+    ],
+    [
+      4,
+      12,
+      0,
+      13,
+      0,
+      "JOB"
+    ],
+    [
+      5,
+      13,
+      0,
+      14,
+      0,
+      "ATTRIBUTES"
+    ],
+    [
+      45,
+      14,
+      0,
+      45,
+      1,
+      "INT"
+    ],
+    [
+      46,
+      45,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      47,
+      45,
+      1,
+      17,
+      0,
+      "INT"
+    ],
+    [
+      50,
+      48,
+      0,
+      49,
+      0,
+      "STRING"
+    ],
+    [
+      51,
+      49,
+      0,
+      50,
+      0,
+      "INT"
+    ],
+    [
+      52,
+      49,
+      0,
+      11,
+      0,
+      "INT"
+    ],
+    [
+      172,
+      48,
+      0,
+      45,
+      0,
+      "STRING"
+    ],
+    [
+      208,
+      182,
+      0,
+      181,
+      0,
+      "STRING"
+    ],
+    [
+      211,
+      187,
+      0,
+      183,
+      0,
+      "INT"
+    ],
+    [
+      212,
+      183,
+      0,
+      184,
+      0,
+      "SEQUENCE"
+    ],
+    [
+      213,
+      184,
+      0,
+      185,
+      0,
+      "JOB"
+    ],
+    [
+      214,
+      185,
+      0,
+      186,
+      0,
+      "ATTRIBUTES"
+    ],
+    [
+      216,
+      182,
+      0,
+      187,
+      0,
+      "STRING"
+    ],
+    [
+      217,
+      186,
+      0,
+      181,
+      1,
+      "INT"
+    ],
+    [
+      241,
+      187,
+      0,
+      198,
+      0,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      244,
+      197,
+      0,
+      201,
+      1,
+      "STRING"
+    ],
+    [
+      249,
+      197,
+      0,
+      205,
+      0,
+      "STRING"
+    ],
+    [
+      259,
+      182,
+      0,
+      211,
+      0,
+      "STRING"
+    ],
+    [
+      260,
+      211,
+      0,
+      209,
+      0,
+      "STRING"
+    ],
+    [
+      262,
+      209,
+      0,
+      212,
+      0,
+      "STRING"
+    ],
+    [
+      263,
+      212,
+      0,
+      205,
+      3,
+      "INT"
+    ],
+    [
+      264,
+      213,
+      0,
+      201,
+      2,
+      "STRING"
+    ],
+    [
+      265,
+      213,
+      0,
+      205,
+      4,
+      "STRING"
+    ],
+    [
+      266,
+      181,
+      0,
+      214,
+      0,
+      "STRING"
+    ],
+    [
+      267,
+      182,
+      0,
+      215,
+      0,
+      "*"
+    ],
+    [
+      268,
+      215,
+      0,
+      201,
+      0,
+      "STRING"
+    ],
+    [
+      269,
+      215,
+      0,
+      205,
+      1,
+      "STRING"
+    ],
+    [
+      271,
+      212,
+      0,
+      216,
+      0,
+      "INT"
+    ],
+    [
+      273,
+      198,
+      0,
+      205,
+      2,
+      "INT"
+    ],
+    [
+      274,
+      198,
+      0,
+      188,
+      0,
+      "INT"
+    ],
+    [
+      275,
+      221,
+      0,
+      220,
+      0,
+      "MODEL"
+    ],
+    [
+      276,
+      221,
+      1,
+      220,
+      1,
+      "CLIP"
+    ],
+    [
+      277,
+      232,
+      0,
+      220,
+      2,
+      "STRING"
+    ],
+    [
+      278,
+      220,
+      0,
+      224,
+      0,
+      "MODEL"
+    ],
+    [
+      279,
+      220,
+      1,
+      224,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      280,
+      220,
+      2,
+      224,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      281,
+      222,
+      0,
+      224,
+      3,
+      "LATENT"
+    ],
+    [
+      282,
+      223,
+      0,
+      224,
+      4,
+      "INT"
+    ],
+    [
+      283,
+      225,
+      0,
+      224,
+      5,
+      "INT"
+    ],
+    [
+      284,
+      226,
+      0,
+      224,
+      6,
+      "COMBO"
+    ],
+    [
+      285,
+      227,
+      0,
+      224,
+      7,
+      "COMBO"
+    ],
+    [
+      286,
+      228,
+      0,
+      224,
+      8,
+      "FLOAT"
+    ],
+    [
+      287,
+      230,
+      0,
+      224,
+      9,
+      "INT"
+    ],
+    [
+      288,
+      220,
+      3,
+      229,
+      0,
+      "MODEL"
+    ],
+    [
+      289,
+      220,
+      4,
+      229,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      291,
+      224,
+      0,
+      229,
+      3,
+      "LATENT"
+    ],
+    [
+      292,
+      223,
+      0,
+      229,
+      4,
+      "INT"
+    ],
+    [
+      293,
+      225,
+      0,
+      229,
+      5,
+      "INT"
+    ],
+    [
+      294,
+      226,
+      0,
+      229,
+      6,
+      "COMBO"
+    ],
+    [
+      295,
+      227,
+      0,
+      229,
+      7,
+      "COMBO"
+    ],
+    [
+      296,
+      228,
+      0,
+      229,
+      8,
+      "FLOAT"
+    ],
+    [
+      297,
+      230,
+      0,
+      229,
+      9,
+      "INT"
+    ],
+    [
+      298,
+      225,
+      0,
+      229,
+      10,
+      "INT"
+    ],
+    [
+      299,
+      233,
+      0,
+      232,
+      0,
+      "STRING"
+    ],
+    [
+      301,
+      45,
+      0,
+      232,
+      1,
+      "STRING"
+    ],
+    [
+      302,
+      220,
+      5,
+      229,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      304,
+      229,
+      0,
+      234,
+      0,
+      "LATENT"
+    ],
+    [
+      305,
+      235,
+      0,
+      234,
+      1,
+      "VAE"
+    ],
+    [
+      306,
+      234,
+      0,
+      61,
+      0,
+      "IMAGE"
+    ],
+    [
+      308,
+      236,
+      0,
+      220,
+      3,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.20992832109438242,
+      "offset": {
+        "0": 4422.294577107865,
+        "1": 1888.3005409987093
+      }
+    }
+  },
+  "version": 0.4
+}
